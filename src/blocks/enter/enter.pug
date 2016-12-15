@@ -4,8 +4,8 @@ mixin enter(additionalClass)
       a.enter__header-link(href="#") Вход
       a.enter__header-link(href="#") Регистрация
     form.enter__form(action="#", method="post")
-      input.input(type="text", placeholder="e-mail")
-      input.input(type="text", placeholder="пароль")
+      input.input.enter__input(type="text", placeholder="e-mail")
+      input.input.enter__input(type="text", placeholder="пароль")
       .enter__form-controls
         a.enter__lost-password(href="#") Забыли пароль?
         button.button Войти

@@ -1,3 +1,31 @@
 .alphabet {
   
+  &__header {
+    font-size: 1.1rem;
+    font-family: @font-first;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  &__content {
+    display: flex;
+  }
+  
+  &__letter {
+    font-family: @font-second;
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-top: .5rem;
+    color: #000;
+    text-decoration: none;
+    .transition;
+    
+    &:hover {
+      color: @color-first;
+    }
+    
+    &:nth-child(n+2) {
+      margin-left: 1rem;
+    }
+  }
 }

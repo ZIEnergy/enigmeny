@@ -1,6 +1,9 @@
 mixin header(additionalClass)
   .header(class=additionalClass)
-    .header__left
-      +logo
-      +phone
-    +enter
+    .wrapper.header__wrapper
+      .header__top
+        .header__left
+          +logo
+          +phone
+        +enter
+      +menu

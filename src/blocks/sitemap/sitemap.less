@@ -1,3 +1,83 @@
 .sitemap {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 2rem 0;
+  display: flex;
+  margin-top: 4rem;
   
+  &__item {
+    width: 20%;
+  }
+  
+  &__item-header {
+    font-size: 1.8rem;
+    font-family: @font-second;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+  
+  &__item-list {
+    padding-left: .5rem;
+  }
+  
+  &__item-link {
+    font-size: 1.4rem;
+    font-family: @font-first;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+    
+    &:nth-child(n+2) {
+      margin-top: 1.5rem;
+    }
+    
+    &--social {
+      display: flex;
+      align-items: center;
+      
+      &:before {
+        content: '';
+        display: block;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: .6rem;
+      }
+    }
+    
+    &--vk {
+      
+      &:before {
+        background: url(../img/icon-vk.png) no-repeat;
+        background-size: cover;
+      }
+    }
+    
+    &--fb {
+      
+      &:before {
+        background: url(../img/icon-fb.png) no-repeat;
+        background-size: cover;
+      }
+    }
+    
+    &--tw {
+      
+      &:before {
+        background: url(../img/icon-tw.png) no-repeat;
+        background-size: cover;
+      }
+    }
+    
+    &--go {
+      
+      &:before {
+        background: url(../img/icon-go.png) no-repeat;
+        background-size: cover;
+      }
+    }
+  }
 }
