@@ -4,5 +4,39 @@ html(lang='en')
   include ../templates/blocks.pug
   
   body
-    
+    +header
+    +menu
+    .wrapper
+      +banner
+      +top-bar
+      +categories
+      .catalog
+        +item('John Varvatos', "Artisan Black", 'item-1.jpg')
+        +item('Guerlain', "Eau De Cologne Du Coq", 'item-2.jpg')
+        +item('Hermes', "Bel Ami", 'item-3.jpg')
+        +item('Lacoste', "Booster", 'item-4.jpg')
+        +item('Narciso Rodriguez', "Artisan Black", 'item-5.jpg')
+        +item('Liz Claiborne', "Spark", 'item-6.jpg')
+        +item('Gap', "1969 Electric", 'item-7.jpg')
+        +item('Davidoff', "Champion", 'item-8.jpg')
+        +item('John Varvatos', "Artisan Black", 'item-1.jpg')
+        +item('Guerlain', "Eau De Cologne Du Coq", 'item-2.jpg')
+        +item('Hermes', "Bel Ami", 'item-3.jpg')
+        +item('Lacoste', "Booster", 'item-4.jpg')
+        +item('Narciso Rodriguez', "Artisan Black", 'item-5.jpg')
+        +item('Liz Claiborne', "Spark", 'item-6.jpg')
+        +item('Gap', "1969 Electric", 'item-7.jpg')
+        +item('Davidoff', "Champion", 'item-8.jpg')
+        +item('John Varvatos', "Artisan Black", 'item-1.jpg')
+        +item('Guerlain', "Eau De Cologne Du Coq", 'item-2.jpg')
+        +item('Hermes', "Bel Ami", 'item-3.jpg')
+        +item('Lacoste', "Booster", 'item-4.jpg')
+        +item('Narciso Rodriguez', "Artisan Black", 'item-5.jpg')
+        +item('Liz Claiborne', "Spark", 'item-6.jpg')
+        +item('Gap', "1969 Electric", 'item-7.jpg')
+        +item('Davidoff', "Champion", 'item-8.jpg')
+      +comment
+      +delivery
+      +sitemap
+      +copyright
     include ../templates/scripts.pug
